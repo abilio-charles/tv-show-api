@@ -1,0 +1,14 @@
+version: '3'
+services:
+  tvshows-pg:
+    image: postgres
+    environment:
+      POSTGRES_USER: name
+      POSTGRES_PASSWORD: name123
+      POSTGRES_DB: tvshows
+    ports:
+      - "5432:5432"
+  tvshows-mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
